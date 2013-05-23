@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="bloockerStyle.css">
+	</head>
+	<body>
+		<div id="container">
+			<h1 id="message"></h1>
+			<div id="menu">
+				<div id="showButt">
+					<h3 class="center">Shows</h3>
+				</div>
+				<div id="addShow">
+					<h3>Add Show</h3>
+				</div>
+				<div id="shows">
+					<ul id="showList">
+					</ul>
+				</div>
+				<div id="invitations">
+					<h3 id="invHead">Invitations</h3>
+					<ul id="invitationList">
+					</ul>
+				</div>
+			</div>
+		</div>
+	<script src="jquery-1.8.2.min.js"></script>
+	<script src="0.0.0.0:8000/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="QueryData.js"></script>
+	<script src="bloocker.js"></script>
+	<script src="home.js"></script>
+	</body>
+</html>

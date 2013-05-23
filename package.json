@@ -1,0 +1,13 @@
+{
+	"name": "bloocker",
+	"version": "0.0.1",
+	"dependencies" :{
+		"express": "3.0.3",
+		"passport": "0.1.15",
+		"socket.io": "0.9.11"
+	},
+	"engines": {
+		"node": "0.8.11",
+		"npm": "1.1.65"
+	}
+}

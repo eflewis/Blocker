@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="bloockerStyle.css">
+	</head>
+	<body>
+		<div id="container">
+			<h1 id="title"></h1>
+			<div id="showHeading">
+				<label for="showName">Change Show Name:</label>
+				<input id="showName" class="textInput" type="text" />
+			</div>
+			<div id="characterDiv">
+				<label for="charName">Add Character Name:</label>
+				<input id="charName" class="textInput" type="text" />
+				<div id="addCharButt" class="showButton">
+					<h4>Add Character</h4>
+				</div>
+				<div id="hideShowChars" class="showButton">
+					<h4>Characters</h4>
+				</div>
+				<ul id="characters">
+				</ul>
+			</div>
+			<div id="blockingDiv">
+				<h2>Edit Blocking:</h2>
+				<label for="blockLine">Cue Line:</label>
+				<input id="blockLine" class="textInput" type="text" />
+				<label for="blockDesc">Blocking Directions:</label>
+				<input id="blockDesc" class="textInput" type="text"/>
+				<div id="charsForBlocking">
+					<h3>Select Characters:</h3>
+				</div>
+				<div id="addBlockButton" class="showButton">
+					<h4>Add Cue</h4>
+				</div>
+				<div id="hideShowBlocking" class="showButton">
+					<h4>Blocking</h4>
+				</div>
+				<ul id="blocking">
+				</ul>
+				<div id="cueToCueButton" class = "showButton">
+					<h5>Cue to Cue</h5>
+				</div>
+			</div>
+			<div id="addUser">
+				<h3 id="addMessage" class="center"></h3>
+				<label for="newUser">Add a user to this show: </label>
+				<input id="newUser" type="text" class="textInput" value="username">
+				<div id="viewAccess" class="showButton">
+					<h4>Grant View Access (actors and crew)</h4>
+				</div>
+				<div id="writeAccess" class="showButton">
+					<h4>Grant Write Access (production staff)</h4>
+				</div>
+			</div>
+			<div id="saveButton" class="showButton">
+				<h4>Save</h4>
+			</div>
+			<div id="cancelButton" class="showButton">
+				<h4>Home</h4>
+			</div>
+		</div>
+		<div id="cueToCue">
+			<h3 id="mode"></h3>
+			<div id="prevCue">
+			</div>
+			<div id="currentCue">
+			</div>
+			<div id="nextCue">
+			</div>
+			<div id="prevCueButton" class="showButton">
+				<h4>Back</h4>
+			</div>
+			<div id="nextCueButton" class="showButton">
+				<h4>Forward</h4>
+			</div>
+			<div id="return" class="showButton">
+				<h5>Return to Show</h5>
+			</div>
+			<div id="skipTo">
+				<div id="showSkipList" class="showButton">
+					<h4> Skip to Cue </h4>
+				</div>
+				<ul id="skipList">
+				</ul>
+			</div>
+		</div>
+	<script src="jquery-1.8.2.min.js"></script>
+	<script src="http://limitless-fjord-7379.herokuapp.com:3000/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="QueryData.js"></script>
+	<script src="addTappableJQPlugin.js"></script>
+	<script src="bloocker.js"></script>
+	<script src="editShow.js"></script>
+	</body>
+</html>

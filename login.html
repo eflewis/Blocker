@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="bloockerStyle.css">
+	</head>
+	<body class="login">
+		<div id="container">
+			<h1 class="center">Log In:</h1>
+			<form id="login" class="center">
+				<input type="text" id="username" class="textInput" value="username"/>
+				<input type="password" id="password" class="textInput" value="password" />
+				<input type="button" id="submit" value="Log In" />
+			</form>
+			<h1 class="center">Sign Up:</h1>
+			<form id="register" class="center">
+				<input type="text" id="regUser" class="textInput" value="username"/>
+				<input type="password" id="regPassword" class="textInput" value="password" />
+				<input type="button" id="regSubmit" value="Register" />
+			</form>
+			<h3 id="message" class="center"></h3>
+		</div>
+	<script src="jquery-1.8.2.min.js"></script>
+	<script src="md5.js"></script>
+	<script src="0.0.0.0:3000/socket.io/socket.io.js"></script>
+	<script src="bloocker.js"></script>
+	<script src="login.js"></script>
+	</body>
+</html>

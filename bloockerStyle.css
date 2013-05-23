@@ -1,0 +1,834 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+	color: #ddd;
+	text-decoration: none;
+	cursor: auto;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*END RESET*/
+
+
+body {
+	width: 100%;
+	min-height: 1500px;
+	background-color: #fff;
+	background-image: linear-gradient(bottom, rgba(36,2,2,0.75) 28%, rgba(110,6,6,0.75) 85%), url('low_contrast_linen.png');
+	background-image: -o-linear-gradient(bottom, rgba(36,2,2,0.75) 28%, rgba(110,6,6,0.75) 85%), url('low_contrast_linen.png');
+	background-image: -moz-linear-gradient(bottom, rgba(36,2,2,0.75) 28%, rgba(110,6,6,0.75) 85%), url('low_contrast_linen.png');
+	background-image: -webkit-linear-gradient(bottom, rgba(36,2,2,0.75) 28%, rgba(110,6,6,0.75) 85%), url('low_contrast_linen.png');
+	background-image: -ms-linear-gradient(bottom, rgba(36,2,2,0.75) 28%, rgba(110,6,6,0.75) 85%), url('low_contrast_linen.png');
+	background-repeat: no-repeat, repeat;
+}
+
+body{
+	width: 100%;
+	min-height: 1300px;
+	background-color: #fff;
+	background-image: url('spotlight.png'), url('spotlight.png'), linear-gradient((bottom, rgba(76,2,2,0.75) 28%, rgba(150,6,6,0.75) 85%), url('low_contrast_linen.png');
+	background-image: url('spotlight.png'), url('spotlight.png'), -o-linear-gradient(bottom, rgba(76,2,2,0.75) 28%, rgba(150,6,6,0.75) 85%), url('low_contrast_linen.png');
+	background-image: url('spotlight.png'), url('spotlight.png'), -moz-linear-gradient(bottom, rgba(76,2,2,0.75) 28%, rgba(150,6,6,0.75) 85%), url('low_contrast_linen.png');
+	background-image: url('spotlight.png'), url('spotlight.png'), -webkit-linear-gradient(bottom, rgba(76,2,2,0.75) 28%, rgba(150,6,6,0.75) 85%), url('low_contrast_linen.png');
+	background-image: url('spotlight.png'), url('spotlight.png'), -ms-linear-gradient(bottom, rgba(76,2,2,0.75) 28%, rgba(150,6,6,0.75) 85%), url('low_contrast_linen.png');
+	background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+	background-position: 10% -150px, 90% -150px, center;
+	background-size: 65% 800px, 65% 800px, 100% 100%;
+}
+
+#container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-family: 'Cabin Condensed', sans-serif;
+}
+
+.role {
+	color: #f00 !important;
+}
+
+.center {
+	display: block;
+	position: relative;
+	margin: 25px auto;
+	text-align: center;
+}
+
+.textInput {
+	display: block;
+	height: 30px;
+	width: 55%;
+	color: #333;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #4D0000;
+	padding: 0 5px;
+	margin: 5px auto;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 25px;
+	text-align: center;
+	opacity: 0.85;
+}
+
+.textInput:focus{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #FF7519;
+	outline: none;
+}
+
+#submit, #regSubmit {
+	position: relative;
+	display: block;
+	width: 25%;
+	height: 50px;
+	background-color: RGBA(0, 0, 0, 0.5);
+	color: #fff;
+	margin: 5px auto;
+	border: none;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	cursor: pointer;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 25px;
+	text-align: center;
+}
+
+#submit:focus, #regSubmit:focus{
+	outline: none;
+}
+
+#submit:active, #regSubmit:active{
+	top: 2px;
+	-webkit-box-shadow: 1px 0px 3px #100;
+	-o-box-shadow: 1px 0px 3px #100;
+	-moz-box-shadow: 1px 0px 3px #100;
+}
+
+h1 {
+	font-family: 'Courgette', cursive;
+	font-size: 60px;
+	color: #fff;
+	text-shadow: 1px 1px #0F0000;
+	text-align: center;
+}
+
+h3{
+	font-family: 'Courgette', cursive;
+	font-size: 20px;
+	color: #fff;
+	width: 50%;
+}
+
+#message{
+	position: relative;
+	width: 60%;
+	margin: 20px auto;
+	text-align: center;
+}
+
+#login, #register {
+	margin: 15px 0;
+}
+
+#menu {
+	position: relative;
+	width: 85%;
+	height: auto;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+#showButt{
+	position: relative;
+	display: inline-block;
+	background-color: RGBA(0,0,0,0.5);
+	-moz-border-radius: 12px;
+	-o-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	width: 66%;
+	margin-left: 2%;
+	margin-right: 2%;
+	float: left;
+	cursor: default;
+}
+
+#addShow {
+	display: inline-block;
+	position: relative;
+	width: 25%;
+	float: left;
+	margin-top: 5px;
+	text-align: center;
+	-moz-border-radius: 12px;
+	-o-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	cursor: pointer;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+	background-color: RGBA(230, 92, 0, 0.63);
+}
+
+#addShow h3{
+	margin: 7px auto;
+}
+
+#addShow:active {
+	background-color: RGBA(230, 92, 0, 0.83);
+	top: 2px;
+	-webkit-box-shadow: 1px 1px 2px #100;
+	-o-box-shadow: 1px 1px 2px #100;
+	-moz-box-shadow: 1px 1px 2px #100;
+}
+
+#shows{
+	position: relative;
+	width: 80%;
+	float: left;
+	margin-top: 25px;
+	padding: 0 10%;
+}
+
+#showList li{
+	position: relative;
+	height: 45px;
+	width: 100%;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 25px;
+	color: #fff;
+	margin: 10px auto;
+	padding-top: 10px;
+	text-align: center;
+	background-color: RGBA(0,0,0,0.65);
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	cursor: pointer;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+}
+
+#showList li:active{
+	background-color: RGBA(0,0,0,0.75);
+	top: 2px;
+	-webkit-box-shadow: 1px 1px 2px #100;
+	-o-box-shadow: 1px 1px 2px #100;
+	-moz-box-shadow: 1px 1px 2px #100;
+}
+
+#invHead{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 50px;
+	padding-top: 20px;
+	margin-top: 25px;
+	background-color: RGBA(230, 92, 0, 0.65);
+	-moz-border-radius: 12px;
+	-o-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+	text-align: center;
+	font-size: 25px
+}
+
+#invHead:active{
+	top: 2px;
+	-webkit-box-shadow: 1px 1px 2px #100;
+	-o-box-shadow: 1px 1px 2px #100;
+	-moz-box-shadow: 1px 1px 2px #100;
+	background-color: RGBA(230, 92, 0, 0.75);
+}
+
+#invitationList{
+	width: 100%;
+	margin-top: 40px;
+	float: left;
+}
+
+#invitationList li{
+	position: relative;
+	height: 45px;
+	width: 100%;
+	text-align: center;
+}
+
+#invitationList li h5{
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	padding: 5px;
+	margin: 0 2%;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 25px;
+	color: #fff;
+}
+
+.invButton{
+	background-color: RGBA(0,0,0,0.65);
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	cursor: pointer;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+}
+
+.invName{
+	font-family: 'Courgette', cursive !important;
+}
+
+#showHeading, #characterDiv, #blockingDiv, #addUser {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin-top: 25px;
+}
+
+#addUser {
+	margin-top: 50px;
+}
+
+#showHeading label, #characterDiv label, #blockingDiv label, #addUser label{
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	font-size: 20px;
+	color: #fff;
+}
+
+#showName, #charName, #blockLine, #blockDesc, #newUser {
+	display: inline-block;
+	width: 60%;
+	height: 40px;
+}
+
+#addCharButt, #addBlockButton {
+	position: relative;
+	display: inline-block;
+	width: 66%;
+	margin-left: 17%;
+	height: 40px;
+	padding-top: 10px;
+	background-color: RGBA(230, 92, 0, 0.65);
+	-moz-border-radius: 12px;
+	-o-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	font-size: 20px;
+	color: #fff;
+}
+
+#addCharButt:active, #addBlockButton{
+	top: 2px;
+	-webkit-box-shadow: 1px 1px 2px #100;
+	-o-box-shadow: 1px 1px 2px #100;
+	-moz-box-shadow: 1px 1px 2px #100;
+	background-color: RGBA(230, 92, 0, 0.75);
+}
+
+#blockingDiv h2{
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	font-size: 30px;
+	color: #fff;
+	text-shadow: 1px 1px #0F0000;
+	margin: 10px auto;
+}
+
+#hideShowChars, #hideShowBlocking, #cueToCueButton, #saveButton, #cancelButton{
+	display: inline-block;
+	width: 80%;
+	height: 35px;
+	padding-top: 9px;
+	margin-top: 25px;
+	margin-bottom: 2px;
+	margin-left: 10%;
+	background-color: RGBA(0, 0, 0, 0.65);
+	-moz-border-radius: 12px;
+	-o-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	font-size: 20px;
+	color: #fff;
+}
+
+#cancelButton{
+	margin-bottom: 30px;
+}
+
+#hideShowChars:active, #hideShowBlocking:active, #cueToCueButton:active, #saveButton:active, #cancelButton:active{
+	background-color: RGBA(0,0,0,0.75);
+	margin-top: 27px;
+	margin-bottom: 0;
+	-webkit-box-shadow: 1px 1px 2px #100;
+	-o-box-shadow: 1px 1px 2px #100;
+	-moz-box-shadow: 1px 1px 2px #100;
+}
+
+#cancelButton:active{
+	margin-bottom: 28px;
+}
+
+#characters li{
+	position: relative;
+	width: 50%;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	margin: 15px 0 0 25%;
+	padding-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: rgba(36,2,2,0.75);
+}
+
+#characters li div{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	padding-top: 2px;
+	float: right;
+	background-color: RGBA(0,0,0,0.6);
+	-moz-border-radius: 12px;
+	-o-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+	text-align: center;
+	cursor: pointer;
+}
+
+#characters li div:active{
+	top: 1px;
+	-webkit-box-shadow: 1px 1px 3px #100;
+	-o-box-shadow: 1px 1px 3px #100;
+	-moz-box-shadow: 1px 1px 3px #100;
+}
+
+#charsForBlocking h3{
+	width: 100%;
+	margin-top: 5px;
+	text-align: center;
+}
+
+#blocking li{
+	width: 95%;
+	margin: 0 auto;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: rgba(36,2,2,0.75);
+}
+
+#blocking li h5{
+	width: 85%;
+	height: 20px;
+	margin: 10px auto;
+	text-align: center;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#blocking li h6{
+	width: 30%;
+	height: 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 34%;
+	padding-top: 6px;
+	background-color: RGBA(230, 92, 0, 0.50);
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	font-size: 18px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+	cursor: pointer;
+}
+
+#blocking li h6:active{
+	margin-top: 7px;
+	margin-bottom: 3px;
+	background-color: RGBA(230, 92, 0, 0.65);
+	-webkit-box-shadow: 1px 1px 3px #100;
+	-o-box-shadow: 1px 1px 3px #100;
+	-moz-box-shadow: 1px 1px 3px #100;
+}
+
+.delete {
+	width: 10px;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 24px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#blocking li div p{
+	width: 100%;
+	margin: 0 0 0 0;
+	text-align: center;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	background: none;
+}
+
+#blocking li div h6{
+	display: inline-block;
+	width: 25%;
+	margin: 0 0 0 0;
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	font-size: 18px;
+	color: #fff;
+	background: none;
+}
+
+#viewAccess, #writeAccess{
+	display: inline-block;
+	width: 35%;
+	margin-left: 10%;
+	margin-top: 20px;
+	height: 40px;
+	padding-top: 15px;
+	text-align: center;
+	background-color: RGBA(230, 92, 0, 0.60);
+	color: #fff;
+	font-family: 'Courgette', cursive;
+	font-size: 18px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+	cursor: pointer;
+}
+
+#cueToCue{
+	position: relative;
+	width: 100%;
+}
+
+#prevCue{
+	width: 100%;
+	min-height: 30px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	background-color: RGBA(0,0,0,0.55);
+	text-align: center;
+}
+
+#currentCue{
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+	background-color: RGBA(0,0,0,0.85);
+}
+
+#nextCue{
+	width: 100%;
+	min-height: 30px;
+	padding-top: 10px;
+	background-color: RGBA(0,0,0,0.55);
+	text-align: center;
+}
+
+#prevCue h5, #nextCue h5{
+	color: RGBA(255,255,255,0.75);
+	font-family: 'Courgette', cursive;
+	font-size: 18px;
+}
+
+#currentCue h5{
+	color: #fff;
+	font-family: 'Courgette', cursive;
+	font-size: 28px;
+}
+
+#prevCue h6, #nextCue h6{
+	color: RGBA(255,255,255,0.75);
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 14px;
+}
+
+#currentCue h6{
+	margin-top: 7px;
+	color: #fff;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 19px;
+}
+
+#prevCue p, #nextCue p{
+	display: inline-block;
+	margin-right: 5%;
+	color: RGBA(255,255,255,0.75);
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 14px;
+}
+
+#currentCue p{
+	display: inline-block;
+	margin-right: 5%;
+	margin-top: 5px;
+	color: #fff;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 16px;
+}
+
+#prevCueButton, #nextCueButton{
+	display: inline-block;
+	width: 40%;
+	height: 40px;
+	margin-left: 5%;
+	margin-top: 10px;
+	margin-bottom: 2px;
+	padding-top: 15px;
+	text-align: center;
+	background-color: RGBA(230, 92, 0, 0.65);
+	color: #fff;
+	font-family: 'Courgette', cursive;
+	font-size: 24px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+	cursor: pointer;
+}
+
+#prevCueButton:active, #nextCueButton:active{
+	margin-top: 12px;
+	margin-bottom: 0;
+	background-color: RGBA(230, 92, 0, 0.78);
+	-webkit-box-shadow: 1px 1px 3px #100;
+	-o-box-shadow: 1px 1px 3px #100;
+	-moz-box-shadow: 1px 1px 3px #100;
+}
+
+#showSkipList h4, #return{
+	width: 90%;
+	height: 30px;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 25px;
+	color: #fff;
+	margin: 10px auto;
+	text-align: center;
+	background-color: RGBA(0,0,0,0.65);
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	cursor: pointer;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+}
+
+#showSkipList h4:active, #return:active{
+	background-color: RGBA(0,0,0,0.75);
+	top: 2px;
+	-webkit-box-shadow: 1px 1px 2px #100;
+	-o-box-shadow: 1px 1px 2px #100;
+	-moz-box-shadow: 1px 1px 2px #100;
+}
+
+#skipList li{
+	width: 100%;
+	text-align: center;
+	margin: 5px auto;
+	font-family: 'Courgette', cursive;
+	font-size: 18px;
+	color: #fff;
+}
+
+.saveButton{
+	position: relative;
+	height: 45px;
+	width: 80% !important;
+	font-family: 'Courgette', cursive;
+	font-size: 20px;
+	color: #fff;
+	margin-left: 10% !important;
+	margin-bottom: 20px !important;
+	padding-top: 10px;
+	text-align: center;
+	background-color: RGBA(0,0,0,0.65) !important;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	cursor: pointer;
+	-webkit-box-shadow: 1px 2px 5px #100;
+	-o-box-shadow: 1px 2px 5px #100;
+	-moz-box-shadow: 1px 2px 5px #100;
+}
+
+.saveButton:active{
+	top: 2px;
+	-webkit-box-shadow: 1px 1px 3px #100;
+	-o-box-shadow: 1px 1px 3px #100;
+	-moz-box-shadow: 1px 1px 3px #100;
+}
+
+.showButton {
+	cursor: pointer;
+}
+
+.show {
+	display: block;
+}
+
+.hide{
+	display : none;
+}
+
+.selected, .selectedIns, .selectedEdit{
+	position: relative;
+	display: inline-block;
+	width: 21%;
+	height: 30px;
+	margin: 10px 2%;
+	padding-top: 3px;
+	text-align: center;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 20px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	color: RGBA(255,255,255,0.95);
+	background-color: RGBA(0,0,0,.75);
+	cursor: pointer;
+}
+
+.unselected, .unselectedIns, .unselectedEdit{
+	position: relative;
+	display: inline-block;
+	width: 21%;
+	height: 30px;
+	margin: 10px 2%;
+	padding-top: 3px;
+	text-align: center;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 20px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	color: RGBA(255,255,255,0.25);
+	background-color: RGBA(0,0,0,.25);
+	cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+
+	.selected, .selectedIns, .selectedEdit{
+		position: relative;
+		display: inline-block;
+		width: 45%;
+		height: 30px;
+		margin: 10px 2.5%;
+		padding-top: 3px;
+		text-align: center;
+		font-family: 'Cabin Condensed', sans-serif;
+		font-size: 20px;
+		-moz-border-radius: 7px;
+		-o-border-radius: 7px;
+		-webkit-border-radius: 7px;
+		color: RGBA(255,255,255,0.95);
+		background-color: RGBA(0,0,0,.75);
+		cursor: pointer;
+	}
+
+	.unselected, .unselectedIns, .unselectedEdit{
+		position: relative;
+		display: inline-block;
+		width: 45%;
+		height: 30px;
+		margin: 10px 2.5%;
+		padding-top: 3px;
+		text-align: center;
+		font-family: 'Cabin Condensed', sans-serif;
+		font-size: 20px;
+		-moz-border-radius: 7px;
+		-o-border-radius: 7px;
+		-webkit-border-radius: 7px;
+		color: RGBA(255,255,255,0.25);
+		background-color: RGBA(0,0,0,.25);
+		cursor: pointer;
+	}
+
+}
